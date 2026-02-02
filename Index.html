@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAVEN FAMILY | Grand Mobile RP</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Oswald',sans-serif}
+body{background:#0b0b0b;color:#f5f5f5}
+
+/* NAV */
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.8);
+padding:15px 25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid #222
+}
+nav h1{letter-spacing:2px;font-size:22px}
+nav a{color:#f5f5f5;text-decoration:none;margin-left:20px;font-size:15px}
+
+/* HERO */
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=1400&q=80")
+center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+.hero-box{
+border:2px solid #a00000;
+padding:40px;
+animation:zoom 1.8s ease;
+}
+.hero-box h2{
+font-size:42px;
+letter-spacing:4px;
+margin-bottom:10px;
+}
+.hero-box p{
+font-size:18px;
+letter-spacing:2px;
+margin-bottom:25px;
+}
+.btn{
+padding:12px 30px;
+border:1px solid #a00000;
+color:#fff;
+text-decoration:none;
+letter-spacing:2px;
+transition:.3s;
+}
+.btn:hover{background:#a00000}
+
+/* SECTION */
+section{padding:90px 20px}
+.title{
+text-align:center;
+font-size:28px;
+letter-spacing:3px;
+margin-bottom:40px;
+}
+
+/* FAMILY INFO */
+.info{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:17px;
+line-height:1.7;
+color:#ccc;
+}
+
+/* HIERARCHY */
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+.card{
+border:1px solid #222;
+padding:25px;
+text-align:center;
+background:#111;
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-10px);
+border-color:#a00000;
+}
+
+/* JOIN */
+.join{
+background:#a00000;
+text-align:center;
+}
+.join a{
+display:inline-block;
+margin:10px;
+background:#000;
+padding:12px 28px;
+text-decoration:none;
+color:#fff;
+letter-spacing:2px;
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:25px;
+font-size:14px;
+color:#777;
+border-top:1px solid #222;
+}
+
+@keyframes zoom{
+from{opacity:0;transform:scale(.85)}
+to{opacity:1;transform:scale(1)}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>RAVEN FAMILY</h1>
+<div>
+<a href="#about">About</a>
+<a href="#hierarchy">Hierarchy</a>
+<a href="#join">Join</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-box">
+<h2>RAVEN FAMILY</h2>
+<p>POWER • LOYALTY • RESPECT</p>
+<a href="#join" class="btn">ENTER FAMILY</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="title">ABOUT THE FAMILY</h2>
+<p class="info">
+Raven Family is one of the most feared and respected families in Grand Mobile RP.
+We believe in loyalty, discipline, and dominance.
+Every member earns respect through actions, not words.
+</p>
+</section>
+
+<section id="hierarchy">
+<h2 class="title">FAMILY HIERARCHY</h2>
+<div class="cards">
+<div class="card">👑 DON</div>
+<div class="card">🩸 UNDERBOSS</div>
+<div class="card">⚔️ CAPTAIN</div>
+<div class="card">🔥 SOLDIER</div>
+</div>
+</section>
+
+<section class="join" id="join">
+<h2 class="title">JOIN THE FAMILY</h2>
+<a href="https://discord.gg/">DISCORD</a>
+<a href="https://wa.me/91XXXXXXXXXX">WHATSAPP</a>
+</section>
+
+<footer>
+© 2026 Raven Family | Grand Mobile RP
+</footer>
+
+</body>
+  </html>
